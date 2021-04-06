@@ -1,0 +1,70 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+.title
+{
+    height: 200vh;
+    max-width: 100%;
+    position: relative;
+}
+.t-front
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(233, 151, 0);
+}
+.t-w
+{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 1000;
+    font-size: 70px;
+}
+.main
+{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    position: fixed;
+    background-color: rgb(2, 12, 41);
+}
+.m-cont
+{
+    margin: none;
+    border: none;
+    padding: none;
+    width: 100%;
+    position: absolute;
+    top: 25vh;
+    display: grid;
+    overflow-x: hidden;
+    grid-template-columns: auto auto auto auto;
+}
+.b-btn
+{
+    width: 20%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.main2
+{
+    height: 100vh;
+    width: 100%;
+}
+#main-btn
+{
+    text-decoration: none;
+}
