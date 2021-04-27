@@ -1,0 +1,186 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADING PAGE*/
+
+#main-btn
+{
+    text-decoration: none;
+}
+.t-front
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(../img/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.t-w
+{
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 81, 0);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 1000;
+    font-size: 70px;
+}
+.slogan
+{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    position: absolute;
+    top: 53vh;
+}
+
+/*navbar*/
+.holder
+{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(2, 12, 41);
+}
+.container
+{
+    margin-left: 4vh;
+    margin-right: 4vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 4vh;
+    position: absolute;
+    top: 12.5vh;
+    z-index: 1;
+}
+.btn
+{
+    height: 75vh;
+    position: relative;
+    border: none;
+    background-color: rgb(2, 12, 41);
+    transition: 0.5s ease;
+}
+.btn::before
+{
+    content: ' ';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    transform: skew(3deg,3deg);
+    z-index: -1;
+}
+.btn:nth-child(1):before
+{
+    background: linear-gradient(270deg,green,red);
+}
+
+.btn:nth-child(2):before
+{
+    background: linear-gradient(270deg,yellow,green);
+}
+
+.btn:nth-child(3):before
+{
+    background: linear-gradient(270deg,blue,yellow);
+}
+
+.btn:nth-child(4):before
+{
+    background: linear-gradient(270deg,red,blue);
+}
+.btn::after
+{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 83, 0.411);
+    width: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+.numb
+{
+    position: absolute;
+    right: 0;
+    top: -5vh;
+    font-size: 25vh;
+    color: rgba(255, 255, 255, 0.288);
+    transition: 0.4s ease-out;
+    z-index: 2;
+}
+.btn:hover .numb
+{
+    top: -15vh;
+}
+.head
+{
+    color: white;
+    font-size: 5vh;
+    /*font-family: 'Fredoka One', cursive;*/
+    font-family: 'Monoton', cursive;
+    font-weight: 100;
+    position: absolute;
+    top: 17vh;
+    left: 19%;
+    z-index: 2;
+}
+.cont
+{
+    font-family: 'Jomhuria', cursive;
+    margin-top: 20vh;
+    margin-bottom: auto;
+    color: white;
+    font-size: 4.5vh;
+    font-weight: 10;
+    z-index: 100;
+}
+.slid
+{
+    cursor: pointer;
+    position: absolute;
+    height: 4vh;
+    width: 11vw;
+    padding-top: 1.6vh;
+    margin: auto;
+    margin-top: -3vh;
+    font-size: 2.2vh;
+    background-color: transparent;
+    border: white solid 0.6vh;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600;
+    opacity: 0;
+    left: 24.7%;
+    transition: 0.4s ease-out;
+    z-index: 2;
+}
+.btn:hover .slid
+{
+    opacity: 1;
+    margin-top: 1.1vh;
+}
+.slid:hover
+{
+    background-color: white;
+    border: rgb(253, 117, 139) solid 0.6vh;
+    color: rgb(253, 117, 139);
+}
