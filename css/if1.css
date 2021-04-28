@@ -103,7 +103,7 @@ body
 .btn:nth-child(4):before
 {
     background: linear-gradient(270deg,red,blue);
-}
+}/*
 .btn::after
 {
     content: ' ';
@@ -116,7 +116,7 @@ body
     width: 50%;
     pointer-events: none;
     z-index: 0;
-}
+}*/
 .numb
 {
     position: absolute;
