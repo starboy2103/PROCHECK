@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 28, 2021 at 01:26 PM
+-- Generation Time: Apr 28, 2021 at 04:07 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.9
 
@@ -48,22 +48,22 @@ INSERT INTO `p_table` (`product_code`, `p_name`, `p_description`) VALUES
 --
 
 CREATE TABLE `rfid_data` (
-  `Member_ID` varchar(15) NOT NULL,
-  `allowed_members` int(11) NOT NULL
+  `RTAG_ID` int(15) NOT NULL,
+  `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `rfid_data`
 --
 
-INSERT INTO `rfid_data` (`Member_ID`, `allowed_members`) VALUES
-('1442918850', 1),
-('1442918850', 2),
-('1442918850', 3),
-('1442918850', 4),
-('1442918850', 5),
-('1442918850', 6),
-('4846813', 7);
+INSERT INTO `rfid_data` (`RTAG_ID`, `id`) VALUES
+(1442918850, 1),
+(1442918850, 2),
+(1442918850, 3),
+(1442918850, 4),
+(1442918850, 5),
+(1442918850, 6),
+(4846813, 7);
 
 -- --------------------------------------------------------
 
@@ -92,7 +92,7 @@ INSERT INTO `r_table` (`tag_no`, `product_code`) VALUES
 -- Indexes for table `rfid_data`
 --
 ALTER TABLE `rfid_data`
-  ADD PRIMARY KEY (`allowed_members`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -102,7 +102,7 @@ ALTER TABLE `rfid_data`
 -- AUTO_INCREMENT for table `rfid_data`
 --
 ALTER TABLE `rfid_data`
-  MODIFY `allowed_members` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
