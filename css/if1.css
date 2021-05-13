@@ -55,9 +55,6 @@ body
     width: 100%;
     background-color: rgb(2, 12, 41);
 }
-#holdera{
-    color: seashell;
-}
 .container
 {
     margin-left: 4vh;
@@ -128,6 +125,7 @@ body
     font-size: 25vh;
     color: rgba(255, 255, 255, 0.288);
     transition: 0.4s ease-out;
+    font-family: 'Unlock', cursive;
     z-index: 2;
 }
 .btn:hover .numb
@@ -136,9 +134,8 @@ body
 }
 .head
 {
-    color: white;
+    color: #fdca40;
     font-size: 5vh;
-    /*font-family: 'Fredoka One', cursive;*/
     font-family: 'Monoton', cursive;
     font-weight: 100;
     position: absolute;
@@ -185,12 +182,307 @@ body
 {
     background-color: white;
     border: rgb(253, 117, 139) solid 0.6vh;
+}
+.int
+{
+    text-decoration: none;
+    color: white;
+    height: 4vh;
+    width: 11vw;
+    background-color: transparent;
+}
+.slid:hover .int
+{
     color: rgb(253, 117, 139);
 }
 
-table{
-    color: snow;
-    border: 1px;
-    width: 200px;
-    line-height: 10px;
+
+/* Abstract section */
+
+.abstract
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.a-cont
+{
+    margin-left: 4vh;
+    margin-right: 4vh;
+
+    display: grid;
+    grid-template-columns: auto;
+    position: absolute;
+    top: 6vh;
+    z-index: 1;
+}
+.head-cont
+{
+    height: 17vh;
+    padding: none;
+    width: 50vw;
+    margin: none;
+    left: 23vw;
+    margin: none;
+    position: relative;
+    border: none;
+    background-color: rgb(4, 22, 75);
+    transition: 0.5s ease;
+}
+.heading
+{
+    margin-top: 3vh;
+    font-size: 8vh;
+    padding: none;
+    text-align: center;
+    color: #fdca40;
+    margin: none;
+    font-weight: 500;
+    font-family: 'Monoton', cursive;
+}
+.head-cont::before
+{
+    content: ' ';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    padding: none;
+    transform: skew(2deg,2deg);
+    background: linear-gradient(270deg,yellow, blue);
+    z-index: -1;
+}
+.exp
+{
+    position: absolute;
+    width: 48vw;
+    left: 3vw;
+    margin-left: 2.5vw;
+    height: 60vh;
+    top: 31vh;
+    border-radius: 9px;
+    padding: 5px;
+    background-color: #301b3f;
+    overflow-y: scroll;
+    border: 3px solid #623781;
+}
+.exp::-webkit-scrollbar
+{
+    width: 10px;
+    opacity: 0;
+}
+.exp::-webkit-scrollbar-thumb
+{
+    border-radius: 5px;
+    background-color: rgb(255, 0, 0);
+}
+.exp:hover .exp::-webkit-scrollbar
+{
+    opacity: 1;
+}
+.a-desc
+{
+    margin: 15px;
+    margin-left: 20px;
+    margin-top: 25px;
+    font-size: 3vh;
+    color: #c0fefc;
+    font-weight: 0;
+    font-family: sans-serif;
+    line-height: 5vh;
+}
+.you
+{
+    position: absolute;
+    right: 5vw;
+    width: 35vw;
+    height: 35vh;
+    top: 44vh;
+}
+
+/* WORKING TEMPLATE */
+.work
+{
+    height: 100vh;
+    background-color: rgb(2, 12, 41);
+    position: relative;
+}
+.disp-vid
+{
+    position: absolute;
+    width: 92.5vw;
+    margin-left: 2.5vw;
+    height: 60vh;
+    top: 28vh;
+    border-radius: 9px;
+    padding: 5px;
+    background-color: #301b3f;
+    border: 3px solid #623781;
+}
+.cont-img
+{
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    height: 96%;
+    width: 46%;
+    overflow: hidden;
+}
+.per
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    transition: 0.3s ease-in-out;
+}
+.per:hover
+{
+    height: 109.6%;
+    width: 110%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    margin-left: -5%;
+    margin-top: -4.8%;
+}
+.pl-head
+{
+    color: #c0fefc;
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    left: 68%;
+    font-weight: 400;
+    font-size: 8vh;
+    top: -2vh;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+.pl-desc
+{
+
+    color: #c0fefc;
+    position: absolute;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'M PLUS 1p', sans-serif;
+    left: 50%;
+    transition: 0.3s ease-in-out;
+    text-align: left;
+    font-size: 2.5vh;
+    top: 13vh;
+    transition: 0.3s ease-in-out;
+}
+.disp-vid:hover .pl-desc
+{
+    color: #0051ff;
+}
+.disp-vid:hover .pl-head
+{
+    color: #fdca40;
+}
+.slids
+{
+    position: absolute;
+    height: 4vh;
+    width: 11vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    margin: auto;
+    margin-top: -3vh;
+    background-color: transparent;
+    border: white solid 0.6vh;
+    color: white;
+    opacity: 0;
+    left: 69%;
+    top: 41vh;
+    transition: 0.3s ease-out;
+    z-index: 2;
+}
+.disp-vid:hover .slids
+{
+    opacity: 1;
+    margin-top: 1.1vh;
+}
+.slids:hover
+{
+    background-color: white;
+    border: rgb(253, 117, 139) solid 0.6vh;
+}
+.ints
+{
+    text-decoration: none;
+    color: white;
+    height: 4vh;
+    width: 11vw;
+    background-color: transparent;
+    font-size: 2.5vh;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.slids:hover .ints
+{
+    color: rgb(253, 117, 139);
+}
+.rfer
+{
+    height: 4vh;
+    width: 11vw;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/* COLLEGES */
+.col
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* ABOUT US */
+
+.abt
+{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: rgb(2, 12, 41);
+}
+.teams
+{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-row-gap: 3vh;
+    position: absolute;
+    width: 75vw;
+    left: 12.5vw; 
+    top: 31vh;
+}
+.team:nth-child(2)
+{
+    margin-left: 14vw;
+}
+.team:nth-child(4)
+{
+    margin-left: 14vw;
+}
+.team
+{
+    position: relative;
+    height: 14vh;
+    width: 60vw;
+    background-color: #e84545;
+    border-radius: 5px;
 }
