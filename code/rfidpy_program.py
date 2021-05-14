@@ -23,6 +23,7 @@ while True:
         pieces[1].encode()
         try:
             cursor=dbConn.cursor()
+            cursor.execute("TRUNCATE TABLE rfid_data")
             cursor.execute("""INSERT INTO rfid_data (RTAG_ID,id) VALUES (%s,%s)""", (pieces[0],pieces[1]))
             dbConn.commit()
             print (" inserted data")
