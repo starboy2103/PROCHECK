@@ -3,7 +3,7 @@ import MySQLdb
 import time
 
 #establish connection to MySQL. You'll have to change this for your database.
-dbConn = MySQLdb.connect("localhost","root","","rfid_read") or die ("could not connect to database")
+dbConn = MySQLdb.connect("localhost","root","","procheck") or die ("could not connect to database")
 #open a cursor to the database
 cursor = dbConn.cursor()
 
