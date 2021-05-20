@@ -8,11 +8,13 @@ dbConn = MySQLdb.connect("localhost","root","","procheck") or die ("could not co
 cursor = dbConn.cursor()
 
 device = 'COM3' #this will have to be changed to the serial port you are using
+
 try:
   print ("Trying...",device)
   arduino = serial.Serial(device, 9600) 
 except: 
   print ("Failed to connect on",device)
+
 while True:
     time.sleep(1)
     try:
@@ -21,6 +23,7 @@ while True:
         print (pieces[0])
         pieces[0].encode()
         pieces[1].encode()
+
         try:
             cursor=dbConn.cursor()
             cursor.execute("TRUNCATE TABLE rfid_data")
