@@ -8,6 +8,53 @@ body
     padding: 0;
 }
 
+/* ACTUAL NAVBAR */
+.navbar
+{
+    position: fixed;
+    width: 25vw;
+    padding: 10px;
+    right: -21.5vw;
+    top: 30vh;
+    background-color: rgb(2,12,41);
+    z-index: 100000;
+    transition: 0.2s ease-in-out;
+    border-radius: 8px;
+}
+.navbar:hover
+{
+    right: 0;
+}
+.nav-btn
+{
+    height: 8vh;
+    width: 104%;
+    margin: 1vh;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    margin-left: -2%;
+    cursor: pointer;
+}
+.nav-btn:hover
+{
+    background-color: rgba(255, 255, 255, 0.26)
+}
+i
+{
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    color: #c0fefc;
+}
+.nav-ttl
+{
+    position: absolute;
+    margin-top: 2vh;
+    margin-left: 6vw;
+    color: #c0fefc;
+    font-family: 'Ubuntu', sans-serif;
+}
 
 /* HEADING PAGE*/
 
@@ -437,6 +484,31 @@ body
     border: none;
     cursor: pointer;
 }
+/* ERROR WORKING */
+
+.err-cont
+{
+    position: absolute;
+    width: 92.5vw;
+    margin-left: 2.5vw;
+    height: 60vh;
+    top: 28vh;
+    border-radius: 9px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a7212179;
+    border: 3px solid #b30000;
+    font-family: 'Ubuntu', sans-serif;
+}
+.error
+{
+    color: red;
+    font-size: 8vh;
+    margin-top: 1vh;
+}
+
 /* COLLEGES */
 .col
 {

@@ -23,6 +23,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+1p:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Javascript-->
     <script src="../js/mainbtn.js"></script>
@@ -32,6 +39,28 @@
 </head>
 <script type="text/javascript"></script>  
 <body>
+    <div class="navbar">
+        <div class="nav-btn">
+            <i class="fas fa-home fa-2x"></i>
+            <h2 class="nav-ttl">HOME</h2>
+        </div>
+        <div class="nav-btn">
+            <i class="fas fa-search fa-2x"></i>
+            <h2 class="nav-ttl">INDEX</h2>
+        </div>
+        <div class="nav-btn">
+            <i class="fas fa-check-square fa-2x"></i>
+            <h2 class="nav-ttl">WORKING</h2>
+        </div>
+        <div class="nav-btn">
+            <i class="fas fa-shopping-cart fa-2x"></i>
+            <h2 class="nav-ttl">PRODUCT</h2>
+        </div>
+        <div class="nav-btn">
+            <i class="fas fa-user-friends fa-2x"></i>
+            <h2 class="nav-ttl">ABOUT US</h2>
+        </div>
+    </div>
     <script>
         function updateDiv()
         { 
@@ -132,19 +161,31 @@
                                     <h5 class="pl-desc"><?php echo $rowf['p_description'] ;?></h5>
                                     <div class="slids"><span class="click"><button class="rfer" onclick="updateDiv()"><span class="ints">Refresh</span></button></span></div>
                                 </div>
+                                
         <?php
-                                continue;
+                                $flag=mysqli_num_rows($mapval);
+                                break;
                             }
                             else
                             {
-                                echo "Hi";
+                                $flag=$flag-1;
                             }
+        ?>
+        <?php
                         }
                     }
                     else
                     {
-                        echo "Hi";
+                        $flag=$flag-1;
                     }
+                }
+                if($flag<0)
+                {
+                    ?>
+                        <div class="err-cont">
+                            <h2 class="error">PROCHECK Alert!! Wrong Product!!</h2>
+                        </div>
+                    <?php
                 }
             }
         ?>
