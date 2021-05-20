@@ -102,6 +102,15 @@ i
     width: 100%;
     background-color: rgb(2, 12, 41);
 }
+
+.tholder
+{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 25vw;
+    top: 35vh;
+}
 .container
 {
     margin-left: 4vh;

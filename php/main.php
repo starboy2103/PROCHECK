@@ -1,6 +1,10 @@
 <?php
     include_once('connect.php');
+    $query="select * from p_table";
+    $result=mysqli_query($con,$query);
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,7 +79,7 @@
         </a>
         <br>
         <br>
-        <h3 class="slogan">**SLOGAN WILL COME HERE**</h3>
+        <h3 class="slogan"> PRODUCT AUTHENTICITY CHECKER </h3>
     </div>
     <div class="holder" id="holder">
         <div class="container" id="a">
@@ -159,7 +163,7 @@
                                     </div>
                                     <h2 class="pl-head"><?php echo $rowf['p_name'];?></h2>
                                     <h5 class="pl-desc"><?php echo $rowf['p_description'] ;?></h5>
-                                    <div class="slids"><span class="click"><button class="rfer" onclick="updateDiv()"><span class="ints">Refresh</span></button></span></div>
+                                    <div class="slids"><span class="click"><button class="rfer" onclick="updateDiv()"><span class="ints">CHECK</span></button></span></div>
                                 </div>
                                 
         <?php
@@ -195,13 +199,38 @@
             <div class="head-cont">
                 <h2 class="heading">PRODUCTS</h2>
             </div>
+            <div class="tholder" id="tholdera">
+            <table align="center" border="1px" style="width:600px; color:white;" >
+                <tr>
+                    <th>PRODUCT NAME</th>
+                    <th>DESCRIPTION</th>
+                </tr>
+                <?php
+                while($rows=mysqli_fetch_assoc($result))
+                {
+                ?>
+                <tr>
+                    <td> <?php echo $rows['p_name'] ;?></td>
+                    <td> <?php echo $rows['p_description'] ;?></td>                
+                </tr>   
+                <?php
+
+                }
+
+                ?>
+
+            </table>
+
+        </div>
         </div>
     </div>
     <div class="abt" id="abt">
         <div class="a-cont">
             <div class="head-cont">
                 <h2 class="heading">ABOUT US</h2>
-            </div>
+            </div>         
+
+        
         </div>
         <div class="teams">
             <div class="team">
