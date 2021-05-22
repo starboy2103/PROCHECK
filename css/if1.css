@@ -15,18 +15,20 @@ body
     width: 25vw;
     padding: 10px;
     right: -21.5vw;
-    top: 30vh;
-    background-color: rgb(2,12,41);
+    top: 20vh;
+    background-color: rgba(2, 12, 41, 0.267);
     z-index: 100000;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
     border-radius: 8px;
 }
 .navbar:hover
 {
     right: 0;
+    background-color: rgba(2, 12, 41, 0.664)
 }
 .nav-btn
 {
+    display: block;
     height: 8vh;
     width: 104%;
     margin: 1vh;
@@ -45,17 +47,20 @@ i
     position: absolute;
     margin-top: 2vh;
     margin-left: 1vw;
-    color: #c0fefc;
+    color: #ffffff;
 }
 .nav-ttl
 {
     position: absolute;
     margin-top: 2vh;
     margin-left: 6vw;
-    color: #c0fefc;
+    color: #ffffff;
     font-family: 'Ubuntu', sans-serif;
 }
-
+#info
+{
+    margin-left: 1.6vw;
+}
 /* HEADING PAGE*/
 
 #main-btn
@@ -541,29 +546,107 @@ i
     position: relative;
     background-color: rgb(2, 12, 41);
 }
-.teams
+.nameplt
 {
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    grid-row-gap: 3vh;
     position: absolute;
-    width: 75vw;
-    left: 12.5vw; 
-    top: 31vh;
+    top: 22vh;
+    left: 25vw;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-row-gap: 8vh;
 }
-.team:nth-child(2)
+.abt-btn
 {
-    margin-left: 14vw;
+    height: 25vh;
+    width: 50vw;
 }
-.team:nth-child(4)
+#kow
 {
-    margin-left: 14vw;
+    margin-left: -10vw;
 }
-.team
+#ud
+{
+    margin-left: 8vw;
+}
+.Myimg
 {
     position: relative;
-    height: 14vh;
-    width: 60vw;
-    background-color: #e84545;
-    border-radius: 5px;
+    margin: none;
+    margin-left: -0.38vw;
+    margin-top: -1px;
+    float: left;
+    height: 25vh;
+    width: 25vh;
+}
+#ud img
+{
+    object-fit: cover;
+    object-position: 100% 10%;  
+}
+#kow img
+{
+    object-fit: cover;
+    object-position: 45% 50%;
+    
+}
+.container .abt-name
+{
+    position: relative;
+    float: left;
+    color: white;
+    margin-left: 1vw;
+    font-size: 4vw;
+    margin-top: 3vh;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.6vw;
+    transition: 0.3s ease-in;
+}
+.container .abt-reg
+{
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    top: 8vh;
+    left: 26.8vh;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 0.3vw;
+    transition: 0.3s ease-in;
+}
+.abt-contacts
+{
+    height: 25vh;
+    width: 25vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 0vh;
+    grid-column-gap: 1vw;
+    margin-top: 1.2vh;
+    float: right;
+    margin-right: 6vw;
+}
+#ud:hover .abt-name
+{
+    color: #0051ff;
+}
+#ud:hover .abt-reg
+{
+    color: #0051ff;
+}
+#kow:hover .abt-name
+{
+    color: #0051ff;
+}
+#kow:hover .abt-reg
+{
+    color: #0051ff;
+}
+.abt-ico i
+{
+    color: white;   
+    transition: 0.2s ease-in-out;
+}
+.abt-ico i:hover
+{
+    color: #0051ff;
 }

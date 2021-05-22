@@ -36,34 +36,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!--Javascript-->
-    <script src="../js/mainbtn.js"></script>
-    <script src="../js/main.js"></script>
 
     <title>Document</title>
 </head>
 <script type="text/javascript"></script>  
 <body>
     <div class="navbar">
-        <div class="nav-btn">
+        <a class="nav-btn" href="#t-front">
             <i class="fas fa-home fa-2x"></i>
             <h2 class="nav-ttl">HOME</h2>
-        </div>
-        <div class="nav-btn">
+        </a>
+        <a class="nav-btn" href="#holder">
             <i class="fas fa-search fa-2x"></i>
             <h2 class="nav-ttl">INDEX</h2>
-        </div>
-        <div class="nav-btn">
+        </a>
+        <a class="nav-btn" href="#abstract">
+            <i class="fas fa-info fa-2x" id="info"></i>
+            <h2 class="nav-ttl">ABSTRACT</h2>
+        </a>
+        <a class="nav-btn" href="#table">
             <i class="fas fa-check-square fa-2x"></i>
             <h2 class="nav-ttl">WORKING</h2>
-        </div>
-        <div class="nav-btn">
+        </a>
+        <a class="nav-btn" href="#col">
             <i class="fas fa-shopping-cart fa-2x"></i>
             <h2 class="nav-ttl">PRODUCT</h2>
-        </div>
-        <div class="nav-btn">
+        </a>
+        <a class="nav-btn" href="#abt">
             <i class="fas fa-user-friends fa-2x"></i>
             <h2 class="nav-ttl">ABOUT US</h2>
-        </div>
+        </a>
     </div>
     <script>
         function updateDiv()
@@ -71,7 +73,7 @@
             location.reload();
         }
     </script>
-    <div class="t-front">
+    <div class="t-front" id="t-front">
         <a id="main-btn" href="#holder">
             <span class="t-w">
                 PROCHECK
@@ -228,20 +230,32 @@
         <div class="a-cont">
             <div class="head-cont">
                 <h2 class="heading">ABOUT US</h2>
-            </div>         
-
-        
-        </div>
-        <div class="teams">
-            <div class="team">
-                <h2>KOWSHAL</h2>
-                <h3>19BCE1396</h3>
-                <img src="" alt="" class="My img">
             </div>
-            <div class="team">
-                <h2>UTKARSH</h2>
-                <h3>19BCE1631</h3>
-                <img src="" alt="" class="My img">
+        </div>
+        <div class="container">
+            <div class="nameplt">
+                <button class="btn abt-btn" id="kow">
+                    <img src="../img/kowshal.jpg" alt="" class="Myimg">
+                    <p class="abt-name">KOWSHAL</p>
+                    <p class="abt-reg">19BCE1396</p>
+                    <div class="abt-contacts">
+                        <a class="abt-ico" href="https://www.instagram.com/starboy_210301" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                        <a class="abt-ico" href="" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+                        <a class="abt-ico" href="https://github.com/starboy2103" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                        <a class="abt-ico" href="https://www.linkedin.com/in/kowshal-santosh-501177193" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                    </div>
+                </button>
+                <button class="btn abt-btn" id="ud">
+                    <img src="../img/utkarsh3.jpeg" alt="" class="Myimg">
+                    <p class="abt-name">UTKARSH</p>
+                    <p class="abt-reg">19BCE1631</p>
+                    <div class="abt-contacts">
+                        <a class="abt-ico" href="" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
+                        <a class="abt-ico" href="" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+                        <a class="abt-ico" href="" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+                        <a class="abt-ico" href="" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+                    </div>
+                </button>
             </div>
         </div>
     </div>
