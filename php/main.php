@@ -13,6 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".././css/if1.css">
 
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,6 +36,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 
     <!-- ICONS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -190,6 +197,7 @@
                     ?>
                         <div class="err-cont">
                             <h2 class="error">PROCHECK Alert!! Wrong Product!!</h2>
+                            <div class="slidse"><span class="click"><button class="rfer" onclick="updateDiv()"><span class="ints">CHECK</span></button></span></div>
                         </div>
                     <?php
                 }
@@ -202,7 +210,7 @@
                 <h2 class="heading">PRODUCTS</h2>
             </div>
             <div class="tholder" id="tholdera">
-            <table align="center" border="1px" style="width:600px; color:white;" >
+            <table align="center" border="1px" style="margin-left:-7vw; width:60vw; color:white;" >
                 <tr>
                     <th>PRODUCT NAME</th>
                     <th>DESCRIPTION</th>
@@ -258,6 +266,9 @@
                 </button>
             </div>
         </div>
+    </div>
+    <div class="copyright">
+        <h3 class="coy">Enter the copyright text here please. This is just testing</h3>
     </div>
 </body>
 </html>
