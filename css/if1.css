@@ -61,6 +61,33 @@ i
 {
     margin-left: 1.6vw;
 }
+@keyframes changebg
+{
+    0%,100%
+    {
+        background-image: url(../img/bg1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    25%
+    {
+        background-image: url(../img/bg2.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    50%
+    {
+        background-image: url(../img/bg3.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    75%
+    {
+        background-image: url(../img/bg4.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
 /* HEADING PAGE*/
 
 #main-btn
@@ -79,6 +106,8 @@ i
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    animation: changebg 16s ease-in-out infinite;
+    transition: background-image 20s ease; 
 }
 .t-w
 {
